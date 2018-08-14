@@ -4,9 +4,9 @@
 
 ## 1. 基础：关于STM32
 
-### 1.1 开发板资源图与串口介绍
+![](..\img\miniSTM32.png)
 
-![](C:\Users\liuyang\Documents\GitHub\2018教育机器人定位模块\img\miniSTM32.png)
+### 1.1 开发板资源图与串口介绍
 
 - 1 个电源指示灯（蓝色），2 个状态指示灯（`DS0`：红色，`DS1`：绿色）。
 - 1 组 5V 电源供应/接入口，1 组 3.3V 电源供应/接入口。
@@ -22,7 +22,7 @@
 
 - 启动模式
 
-  ![](C:\Users\liuyang\Documents\GitHub\2018教育机器人定位模块\img\start mode.png)
+  ![](..\img\start mode.png)
 
 ### 1.3 开发板使用注意事项
 
@@ -57,7 +57,7 @@
 
 > 本章用到的硬件只有 LED（DS0 和 DS1）。其电路在 ALIENTEK MiniSTM32 开发板上默认是已经连接好了的。DS0 接 PA8，DS1 接 PD2。所以只需要操作PA8和PD2两个IO口即可。
 
-![](C:\Users\liuyang\Documents\GitHub\2018教育机器人定位模块\img\LED.png)
+![](..\img\LED.png)
 
 ### 2.3 软件设计
 
@@ -114,11 +114,11 @@
 
 - 串口设置的一般步骤可以总结为如下几个步骤：
 
-1.  串口时钟使能，GPIO 时钟使能
+1. 串口时钟使能，GPIO 时钟使能
 
    `RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1)；`
 
-2.  串口复位
+2. 串口复位
 
    当外设出现异常的时候可以通过**复位设置**，实现该外设的复位，然后重新配置这个外设达到让其重新工作的目的。一般在系统刚开始配置外设的时候，都会先执行复位该外设的操作。
 
@@ -150,7 +150,7 @@
    uint16_t USART_ReceiveData(USART_TypeDef* USARTx);//接收数据
    ```
 
-5.  开启中断并且初始化 NVIC（如果需要开启中断才需要这个步骤）
+5. 开启中断并且初始化 NVIC（如果需要开启中断才需要这个步骤）
 
    ```c
    FlagStatus USART_GetFlagStatus(USART_TypeDef* USARTx, uint16_t USART_FLAG)；
@@ -173,11 +173,11 @@
 
 8. 获取相应中断状态
 
-`ITStatus USART_GetITStatus(USART_TypeDef* USARTx, uint16_t USART_IT)`
+   `ITStatus USART_GetITStatus(USART_TypeDef* USARTx, uint16_t USART_IT)`
 
 ### 3.2 硬件设计
 
-![](C:\Users\liuyang\Documents\GitHub\2018教育机器人定位模块\img\IT.png)
+![](..\img\IT.png)
 
 ### 3.3 软件设计
 
