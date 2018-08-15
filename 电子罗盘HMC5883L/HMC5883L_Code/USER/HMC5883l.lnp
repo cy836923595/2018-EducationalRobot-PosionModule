@@ -1,0 +1,13 @@
+--cpu Cortex-M3
+".\stm32f10x.o"
+".\main.o"
+".\delay.o"
+".\sys.o"
+".\usart.o"
+".\delay_5883.o"
+".\iic_5883.o"
+".\signal_5883.o"
+--strict --scatter ".\HMC5883l.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\HMC5883l.map" -o .\HMC5883l.axf
