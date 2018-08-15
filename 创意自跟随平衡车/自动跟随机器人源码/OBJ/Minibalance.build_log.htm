@@ -1,0 +1,151 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Yang liuyang, NJU, LIC=8MZII-TR48C-WKEB8-33SP2-Q56IC-HQTJ1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  D:\MDK514\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+C:\Users\liuyang\Documents\GitHub\2018-EducationalRobot-PosionModule\创意自跟随平衡车\自动跟随机器人源码\USER\Minibalance.uvprojx
+Project File Date:  08/14/2018
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling startup_stm32f10x_md.s...
+compiling Minibalance.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+Minibalance.c(94): warning:  #223-D: function "KEY_Scan" declared implicitly
+                key=KEY_Scan(0);
+Minibalance.c: 2 warnings, 0 errors
+compiling delay.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\SYSTEM\delay\delay.c: 1 warning, 0 errors
+compiling sys.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\SYSTEM\sys\sys.c(27): warning:  #69-D: integer conversion resulted in truncation
+        MY_NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+..\SYSTEM\sys\sys.c: 2 warnings, 0 errors
+compiling usart.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\SYSTEM\usart\usart.c(227): warning:  #1-D: last line of file ends without a newline
+  } 
+..\SYSTEM\usart\usart.c: 2 warnings, 0 errors
+compiling LED.C...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\LED\LED.C: 1 warning, 0 errors
+compiling key.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\KEY\key.c: 1 warning, 0 errors
+compiling oled.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\OLED\oled.c: 1 warning, 0 errors
+compiling timer.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\TIMER\timer.c(44): warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+        NVIC_InitTypeDef NVIC_InitStructure;
+..\HARDWARE\TIMER\timer.c(84): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\TIMER\timer.c(84): warning:  #940-D: missing return statement at end of non-void function "TIM3_IRQHandler"
+  }
+..\HARDWARE\TIMER\timer.c: 4 warnings, 0 errors
+compiling mpuiic.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\MPU6050\mpuiic.c: 1 warning, 0 errors
+compiling mpu6050.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\MPU6050\mpu6050.c: 1 warning, 0 errors
+compiling inv_mpu.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\MPU6050\eMPL\inv_mpu.c(2983): warning:  #940-D: missing return statement at end of non-void function "mpu_dmp_init"
+  }
+..\HARDWARE\MPU6050\eMPL\inv_mpu.c: 2 warnings, 0 errors
+compiling inv_mpu_dmp_motion_driver.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\MPU6050\eMPL\inv_mpu_dmp_motion_driver.c: 1 warning, 0 errors
+compiling pwm.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\PWM\pwm.c(64): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\PWM\pwm.c: 2 warnings, 0 errors
+compiling Motor.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\Motor\Motor.c(109): warning:  #177-D: variable "Target_Velocity" was declared but never referenced
+                static float Encoder_Integral,Target_Velocity;
+..\HARDWARE\Motor\Motor.c(208): warning:  #940-D: missing return statement at end of non-void function "turn"
+  }
+..\HARDWARE\Motor\Motor.c(157): warning:  #177-D: variable "Kd1" was declared but never referenced
+          float Kp1=40,Kd1=0,ccc;  
+..\HARDWARE\Motor\Motor.c: 4 warnings, 0 errors
+compiling ENCODE.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\ENCODE\ENCODE.c: 1 warning, 0 errors
+compiling adc.c...
+..\SYSTEM\sys\sys.h(104): warning:  #1295-D: Deprecated declaration NVIC_init - give arg types
+  void NVIC_init();
+..\HARDWARE\ADC\adc.c: 1 warning, 0 errors
+compiling misc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_wwdg.c...
+linking...
+Program Size: Code=37294 RO-data=6450 RW-data=236 ZI-data=2676  
+FromELF: creating hex file...
+"..\OBJ\Minibalance.axf" - 0 Error(s), 27 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\liuyang\Documents\GitHub\2018-EducationalRobot-PosionModule\创意自跟随平衡车\自动跟随机器人源码\USER\RTE
+  D:\MDK514\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
